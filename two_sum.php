@@ -7,6 +7,7 @@ class Solution {
     * @return Integer[]
     */
     function twoSum($nums, $target) {
+        $Indices = [];
         $count = 0;
         $count2 = 0;
     
@@ -14,14 +15,14 @@ class Solution {
             $count2 = 0;
             foreach ($nums as $num2) {
                 if ($num + $num2 === $target) {
-                    $count2++;
-                    return [$count, $count2];
+                    $Indices = [$count, $count2];
                 }
+                $count2++;
             }
             $count++;
         }
     
-        return [];
+        return $Indices;
     }
 }
 
