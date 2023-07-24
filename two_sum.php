@@ -14,9 +14,9 @@ class Solution {
             $count2 = 0;
             foreach ($nums as $num2) {
                 if ($num + $num2 === $target) {
+                    $count2++;
                     return [$count, $count2];
                 }
-                $count2++;
             }
             $count++;
         }
