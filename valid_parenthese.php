@@ -6,7 +6,7 @@ class Solution {
      * @param String $s
      * @return Boolean
      */
-    function isValid(string $s): bool {
+    function isValid(string $s) {
         $open = 0;
         $close = 0;
         $lastOpen = '';
